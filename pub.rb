@@ -17,4 +17,12 @@ class Pub
     return false if customer.drunkeness > 5
     return true
   end
+
+  def add_to_till(drink)
+    @till += drink.price
+  end
+
+  def remove_drink(drink)
+    @drinks.delete(drink)
+  end
 end

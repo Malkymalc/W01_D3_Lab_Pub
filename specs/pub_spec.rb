@@ -42,14 +42,14 @@ class TestPub < MiniTest::Test
   def test_drunk_check__drunk
     assert_equal(false, @pub.drunk_check(@customer_2))
   end
-  #
-  #   def test_add_to_till
-  #     add_to_till(@beer_1)
-  #     assert_equal(5, @pub.till)
-  #   end
-  #
-  #   def test_remove_drink
-  #     remove_drink(@beer_3)
-  #     assert_equal([@beer_1,@beer_2], @pub.drinks)
-  #   end
+
+    def test_add_to_till
+      @pub.add_to_till(@beer_1)
+      assert_equal(5, @pub.till)
+    end
+
+    def test_remove_drink
+      @pub.remove_drink(@beer_3)
+      assert_equal([@beer_1,@beer_2], @pub.drinks)
+    end
 end

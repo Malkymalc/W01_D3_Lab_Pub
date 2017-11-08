@@ -33,17 +33,4 @@ class TestCustomer < MiniTest::Test
     assert_equal(2, @pub.drinks.count)
 
   end
-
-  # def test_drunk__sober
-  #   assert_equal(0, @customer_1.drunk)
-  # end
-  #
-  # def test_drunk__merry
-  #   assert_equal(0, @customer_1.drunk)
-  # end
-  #
-  # def test_drunk__drunk
-  #   assert_equal(0, @customer_1.drunk)
-  # end
-
 end

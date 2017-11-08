@@ -1,5 +1,5 @@
 class Customer
-  attr_reader :name, :age, :wallet
+  attr_reader :name, :age, :wallet, :drunkeness
 
   def initialize(name, age, wallet, drunkeness)
     @name = name

@@ -7,4 +7,14 @@ class Pub
     @till = till
     @drinks = drinks_arr
   end
+
+  def age_check(customer)
+    return true if customer.age > 18
+    return false
+  end
+
+  def drunk_check(customer)
+    return false if customer.drunkeness > 5
+    return true
+  end
 end

@@ -22,12 +22,15 @@ class Customer
   end
 
   def buy_drink(drink, pub)
-    enough_cash(drink)
-    return "Sorry, you're too young mate" unless (pub.age_check(self))
-    return "Sorry, you're too drunk mate" unless (pub.drunk_check(self))
+    return "Oh, what?!" #unless enough_cash(drink)
+    return "Sorry, you're too young mate" #unless (pub.age_check(self))
+    return "Sorry, you're too drunk mate" #unless (pub.drunk_check(self))
+    return "I'm sorry, we're out of #{drink.name},would you like
+    a #{pub.alt_suggest(drink)} instead?" #unless pub.has_drink(drink)
     pub.remove_drink(drink)
-
   end
+
+  
 
 
 
